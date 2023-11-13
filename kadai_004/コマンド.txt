@@ -1,0 +1,28 @@
+PS C:\Users\yumoto> mkdir git_challenge
+
+    Directory: C:\Users\yumoto
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d----          2023/11/12    20:22                git_challenge
+
+PS C:\Users\yumoto> cd git_challenge  
+PS C:\Users\yumoto\git_challenge> git init
+Initialized empty Git repository in C:/Users/yumoto/git_challenge/.git/
+PS C:\Users\yumoto\git_challenge> git add hello_world.txt
+PS C:\Users\yumoto\git_challenge> git commit -m "最初のコミット" 
+[main (root-commit) d1c03c3] 最初のコミット
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\yumoto\git_challenge> git status
+On branch main
+nothing to commit, working tree clean
+PS C:\Users\yumoto\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\yumoto\git_challenge> git add hello_world.txt
+PS C:\Users\yumoto\git_challenge> git commit -m "日本語訳を追記"
+[main b33151e] 日本語訳を追記
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\yumoto\git_challenge> git log --oneline             
+b33151e (HEAD -> main) 日本語訳を追記
+d1c03c3 最初のコミット
+PS C:\Users\yumoto\git_challenge> 
